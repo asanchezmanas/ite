@@ -140,4 +140,4 @@ navigator.permissions.query({name:'geolocation'})
 
 ## 📄 License
 
-MIT
+
