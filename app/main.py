@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 
 # Importar routers
-from app.api import auth, users, teams, activities, zones, integrations, leaderboard
+from app.api import auth, users, teams, activities, zones, integrations, leaderboard, competitions
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -38,6 +38,7 @@ app.include_router(activities.router, prefix=settings.API_V1_STR)
 app.include_router(zones.router, prefix=settings.API_V1_STR)
 app.include_router(integrations.router, prefix=settings.API_V1_STR)
 app.include_router(leaderboard.router, prefix=settings.API_V1_STR)
+app.include_router(competitions.router, prefix=settings.API_V1_STR)
 
 @app.get("/")
 async def root():
