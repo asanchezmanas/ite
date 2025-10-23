@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#004D98">
+  <title>Territory Conquest</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/assets/icon-192.png">
+</head>
+<body>
+  <!-- App Container -->
+  <div id="app"></div>
+  
+  <!-- Bottom Nav -->
+  <nav id="bottom-nav" class="bottom-nav">
+    <a href="/" data-page="home">🏠</a>
+    <a href="/map" data-page="map">🗺️</a>
+    <a href="/tracking" data-page="tracking" class="fab">➕</a>
+    <a href="/battles" data-page="battles">⚔️</a>
+    <a href="/profile" data-page="profile">👤</a>
+  </nav>
+  
+  <!-- External libs -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/h3-js@4.1.0/dist/h3-js.umd.js"></script>
+  
+  <!-- App -->
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
